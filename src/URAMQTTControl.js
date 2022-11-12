@@ -9,7 +9,7 @@ export default function URAMQTTControl(props) {
   console.log("props " + props.outputTopic)
   return (
     <div>
-      <Connector brokerUrl="ws://157.230.89.7:1884" options={{ keepalive: 0 }} >
+      <Connector brokerUrl="ws://10.6.3.134:1884" options={{ keepalive: 0 }} >
         <BasicControl topic={props.inputTopic} />
         <RobotStatus topic={props.outputTopic} />
       </Connector>
